@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<configuration>
+  <!-- 
+  <property>
+    <name>dt.application.{appName}.operator.{opName}.prop.{propName}</name>
+    <value>some-default-value (if value is not specified, it is required from the user or custom config when launching)</value>
+  </property>
+  -->
+
+  <!-- memory assigned to app master-->
+  <!--
+  <property>
+    <name>dt.attr.MASTER_MEMORY_MB</name>
+    <value>512</value>
+  </property>
+  -->
+  <!-- For TestBoyerMoore Algorithm-->
+  <!--LineByLineInputReader Operator-->
+  <!--
+  <property>
+    <name>dt.application.BoyerMooreAlgortihm.operator.Genome_Input.prop.directory</name>
+    <value>file:///home/plaban/Test/Input/Small_FASTQ</value>
+  </property>
+  -->
+  <!--FileOutput Operator Matched-->
+  <!--
+  <property>
+    <name>dt.operator.Result_Writer_Matched.prop.filePath</name>
+    <value>file:///home/plaban/Test/Output/Utilities/BoyerMooreTest</value>
+  </property>
+
+  <property>
+    <name>dt.operator.Result_Writer_Matched.prop.outputFileName</name>
+    <value>BoyerMooreResult_Matched.txt</value>
+  </property>
+  -->
+
+  <!--FileOutput Operator Matched-->
+  <!--
+  <property>
+    <name>dt.operator.Result_Writer_Unmatched.prop.filePath</name>
+    <value>file:///home/plaban/Test/Output/Utilities/BoyerMooreTest</value>
+  </property>
+
+  <property>
+    <name>dt.operator.Result_Writer_Unmatched.prop.outputFileName</name>
+    <value>BoyerMooreResult_Unmatched.txt</value>
+  </property>
+  -->
+
+  <!--Test_BoyerMooreAlgorithm-->
+  <!--
+  <property>
+    <name>dt.operator.Boyer_Moore_Algortihm.prop.refGenPath</name>
+    <value>/home/plaban/Test/Reference/Rota_Virus/ref.fa</value>
+  </property>
+  -->
+
+
+  <!--For Test_Complement-->
+  <!--LineByLineInputReader Operator-->
+  <property>
+    <name>dt.application.Complement.operator.FASTQ_File.prop.directory</name>
+    <value>file:///home/plaban/Test/Input/Small_FASTQ</value>
+  </property>
+
+  <!--FileOutput Operator-->
+
+  <property>
+    <name>dt.operator.Complement_Writer.prop.filePath</name>
+    <value>file:///home/plaban/Test/Output/Utilities/Complement</value>
+  </property>
+
+  <property>
+    <name>dt.operator.Complement_Writer.prop.outputFileName</name>
+    <value>complement.txt</value>
+  </property>
+
+</configuration>
